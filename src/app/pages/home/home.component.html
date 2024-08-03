@@ -1,1 +1,5 @@
-<p>home works!</p>
+<p-orderList [value]="notes" header="My Notes">
+  <ng-template let-note pTemplate="item">
+    {{ note.title }}
+  </ng-template>
+</p-orderList>
